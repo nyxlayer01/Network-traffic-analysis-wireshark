@@ -1,0 +1,40 @@
+Wireshark Packet Capture & Protocol Analysis Report
+---------------------------------------------------
+
+Objective:
+To capture live network packets, filter them by protocol, and identify at least three different protocols in use.
+
+Steps Performed:
+1. Installed and opened Wireshark.
+2. Selected the active network interface and started capture.
+3. Visited https://www.wikipedia.org in the browser to generate traffic.
+4. Stopped the capture after approximately one minute.
+5. Applied display filters:
+   - dns
+   - tcp
+   - http
+6. Opened Statistics → Protocol Hierarchy to view protocol breakdown.
+7. Exported the capture as capture.pcap.
+
+Protocols Identified:
+1. DNS (Domain Name System)
+   - Purpose: Resolves domain names to IP addresses.
+   - Observation: DNS lookups for wikipedia.org and related subdomains.
+   - Packet Count: 36 packets
+
+2. TCP (Transmission Control Protocol)
+   - Purpose: Provides reliable, ordered delivery of data between applications.
+   - Observation: TCP handshake and data transfer for HTTP requests.
+   - Packet Count: 35 packets
+
+3. HTTP (Hypertext Transfer Protocol)
+   - Purpose: Transfers web content between client and server.
+   - Observation: GET request to Wikipedia homepage.
+   - Packet Count: 14 packets
+
+Additional Observations:
+- TCP packets included both handshake and HTTP content delivery.
+- DNS queries resolved additional Wikimedia content delivery network domains.
+
+Conclusion:
+The capture demonstrated multiple network protocols in action while visiting Wikipedia, including DNS for name resolution, TCP for reliable data transport, and HTTP for delivering web content.
