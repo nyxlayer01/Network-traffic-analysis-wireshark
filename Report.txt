@@ -2,7 +2,7 @@ Wireshark Packet Capture & Protocol Analysis Report
 ---------------------------------------------------
 
 Objective:
-To capture live network packets, filter them by protocol, and identify at least three different protocols in use.
+To capture live network packets, filter them by protocol, and identify different protocols in use.
 
 Steps Performed:
 1. Installed and opened Wireshark.
